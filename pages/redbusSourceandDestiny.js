@@ -12,6 +12,7 @@ class redbusSourceandDestiny {
         await this.sourcelocator.fill(source);
          const sourceOption = this.selectSource.filter({ hasText: source });
         await sourceOption.first().click();
+            await this.page.waitForTimeout(2000); // Wait for 2 seconds
             
 
 
