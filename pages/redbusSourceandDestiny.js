@@ -8,6 +8,7 @@ class redbusSourceandDestiny {
     }
 
     async enterSource(source){
+        await this.sourcelocator.click();
         await this.sourcelocator.fill(source);
          const sourceOption = this.selectSource.filter({ hasText: source });
         await sourceOption.first().click();
